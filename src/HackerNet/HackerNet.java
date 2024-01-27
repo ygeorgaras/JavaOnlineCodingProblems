@@ -5,7 +5,7 @@ import java.io.IOException;
 public class HackerNet {
     
     public void main() throws IOException {
-        MinimumBribes minBribes = new MinimumBribes();
-        minBribes.main(null);
+        //MinimumBribes.main(null);
+        SortAscend.main(null);
     }
 }
