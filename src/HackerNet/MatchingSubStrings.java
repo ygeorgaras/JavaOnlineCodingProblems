@@ -30,18 +30,10 @@ class Result {
         }        
 
         return "NO";
+        
         //first attempt I tried to use for loops, ended up not being as efficient as the online complier wanted.
-        //
-        // String shortString = s1;
-        // String longString = s2;
-
-        // if(s1.length() > s2.length()){
-        //     shortString = s2;
-        //     longString = s1;
-        // }
-        // for(int i = 0; i < shortString.length(); i++){
-        //     if(longString.contains(shortString.substring(i, i + 1))){
-        //         System.out.println(shortString.substring(i,i +1));
+        // for(int i = 0; i < s1.length(); i++){
+        //     if(s2.contains(s1.substring(i, i + 1))){
         //         return "YES";
         //     }
         // }

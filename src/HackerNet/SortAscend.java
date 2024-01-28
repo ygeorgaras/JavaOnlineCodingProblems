@@ -10,6 +10,23 @@ public class SortAscend {
     static int minSwaps = 0;
     private static final Scanner scanner = new Scanner(System.in);
 
+    // Complete the minimumSwaps function below.
+    static int minimumSwaps(int[] arr) {
+        int count = 0;
+        for(int i =0; i <arr.length;) {
+            if (arr[i]-1!= i) {
+                int k = arr[i] - 1;
+                int temp = arr[i];
+                arr[i] = arr[k];
+                arr[k] = temp;
+                count++;
+                continue;
+            }
+            i++;
+        }
+        return count;
+    }
+
     public static void main(String[] args) throws IOException {
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("C:\\output\\results.txt"));
 
@@ -36,24 +53,5 @@ public class SortAscend {
 
         scanner.close();
     }
-        // Complete the minimumSwaps function below.
-        static int minimumSwaps(int[] arr) {
-            int count = 0;
-            for(int i =0; i <arr.length;) {
-                System.out.println("Start " +i);
-                System.out.println(arr[i]);
-                System.out.println(arr[i] - 1);
-                if (arr[i]-1!= i) {
-                    int k = arr[i] - 1;
-                    System.out.println(k);
-                    int temp = arr[i];
-                    arr[i] = arr[k];
-                    arr[k] = temp;
-                    count++;
-                    continue;
-                }
-                i++;
-            }
-            return count;
-        }
+
     }
